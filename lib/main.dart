@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, unused_import, deprecated_member_use, duplicate_ignore, sized_box_for_whitespace, avoid_print
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, unused_import, deprecated_member_use, duplicate_ignore, sized_box_for_whitespace, avoid_print, unnecessary_string_interpolations, unnecessary_type_check
 
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class BmiCalculator extends StatefulWidget {
 class _BmiCalculatorState extends State<BmiCalculator> {
   int currentindex = 0;
   String range = "";
-  String result = "";
+  String result= "";
   // String range=checkRange(result);
   TextEditingController heightController = TextEditingController();
   TextEditingController weightController = TextEditingController();
@@ -129,8 +129,8 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                             double.parse(heightController.value.text);
                         double weight =
                             double.parse(weightController.value.text);
-                        double result =
-                            double.parse(heightController.value.text);
+                        // double result =
+                        //     double.parse(heightController.value.text);
                         calculateBmi(height, weight);
                         checkRange(result);
                       },
@@ -167,7 +167,7 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                       " $result ",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 30.0,
+                        fontSize: 40.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -178,10 +178,10 @@ class _BmiCalculatorState extends State<BmiCalculator> {
                   Container(
                     width: double.infinity,
                     child: Text(
-                      " $range ",
+                      "$range",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 30.0,
+                        fontSize: 40.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -193,12 +193,13 @@ class _BmiCalculatorState extends State<BmiCalculator> {
     );
   }
 
-  void checkRange(double result) {
-    if (result <= 18.5) {
+  void checkRange(String result) {
+    double res = double.parse(result);
+    if (res <= 18.5) {
       range = "Underweight";
-    } else if (result <= 25) {
+    } else if (res <= 25) {
       range = "Healthy";
-    } else if (result <= 30) {
+    } else if (res <= 30) {
       range = "Overweight";
     } else {
       range = "Obesity";
