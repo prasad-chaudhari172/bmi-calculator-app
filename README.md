@@ -16,8 +16,8 @@ This is a BMI (Body Mass Index) calculator app developed using Flutter. The app 
 
 <!-- Add your app screenshots here -->
 <p align="center">
-  <img src="BMI page.PNG" alt="Screenshot 1" width="300" height="600">
-  <img src="BMI Ans.PNG" alt="Screenshot 2" width="300" height="620">
+  <img src="BMI page.PNG" alt="Screenshot 1" width="300" height="500">
+  <img src="BMI Ans.PNG" alt="Screenshot 2" width="300" height="510">
 </p>
 
 ## Installation
