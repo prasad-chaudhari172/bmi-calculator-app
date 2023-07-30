@@ -16,8 +16,8 @@ This is a BMI (Body Mass Index) calculator app developed using Flutter. The app 
 
 <!-- Add your app screenshots here -->
 <p align="center">
-  <img src="BMI page.PNG" alt="Screenshot 1" width="250">
-  <img src="BMI Ans.PNG" alt="Screenshot 2" width="250">
+  <img src="BMI page.PNG" alt="Screenshot 1" width="300" height="600">
+  <img src="BMI Ans.PNG" alt="Screenshot 2" width="300" height="620">
 </p>
 
 ## Installation
@@ -58,7 +58,7 @@ Contributions to this project are welcome. If you encounter any bugs, have sugge
 
 ## License
 
-This project is licensed under the [MIT License](https://chat.openai.com/LICENSE).
+This project is licensed under the [MIT License](D:\src\F_projects\bmi_calculator\LICENSE).
 
 ## Contact
 
